@@ -4,13 +4,13 @@ import { checkingCredentials, login, logout } from "./"
 
 //* TAREAS ASÍNCRONAS 
 
-export const checkingAuthentication = (email, password) => {
+export const checkingAuthentication = () => {
     return async (dispatch) => {
         dispatch(checkingCredentials())
     }
 }
 
-export const startGoogleSignIn = (email, password) => {
+export const startGoogleSignIn = () => {
     return async (dispatch) => {
         dispatch(checkingCredentials())
 
